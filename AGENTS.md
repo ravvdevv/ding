@@ -29,6 +29,7 @@ ding/
 │   └── runner.js    # Command execution and duration tracking
 ├── package.json     # Metadata and dependencies
 ├── README.md        # User documentation
+├── LICENSE          # MIT License
 └── AGENTS.md        # AI operating manual (this file)
 ```
 
