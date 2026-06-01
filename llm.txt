@@ -1,0 +1,43 @@
+# ding - CLI Discord Notifications
+
+## Purpose
+A minimal CLI tool to send notifications to Discord via webhooks. Useful for long-running tasks, build completions, or general alerts.
+
+## Installation
+```bash
+bun add -g @ravvdevv/ding-et
+```
+
+## Usage Patterns
+
+### Direct Message
+Send a string directly to the configured webhook.
+```bash
+ding -m "Task description"
+```
+
+### Command Wrapper (Recommended for LLMs)
+Execute a command and receive a notification automatically upon completion (success or failure). Includes duration and host info.
+```bash
+ding run "<command>"
+```
+
+### Piped Input
+Send the output of a previous command as a notification.
+```bash
+echo "Process output" | ding
+```
+
+## Configuration
+- **Global**: `~/.ding/config.json`
+- **Local (per-project)**: `.ding/config.json`
+- Format: `{"webhook": "https://discord.com/api/webhooks/..."}`
+
+## Constraints
+- Requires a Discord Webhook URL.
+- Onboarding is interactive; run `ding` manually first if no config exists.
+- Non-interactive environments (CI/CD) must have a config file pre-provisioned.
+
+## Integration Tips for LLMs
+- When running long tasks for a user, prefix the command with `ding run` to keep the user updated.
+- Use local config files to route notifications to project-specific channels.

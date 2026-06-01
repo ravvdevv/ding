@@ -30,6 +30,7 @@ ding/
 ├── package.json     # Metadata and dependencies
 ├── README.md        # User documentation
 ├── LICENSE          # MIT License
+├── llm.txt          # Machine-readable skill description
 └── AGENTS.md        # AI operating manual (this file)
 ```
 
