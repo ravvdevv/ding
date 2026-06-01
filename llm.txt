@@ -5,7 +5,7 @@ A minimal CLI tool to send notifications to Discord via webhooks. Useful for lon
 
 ## Installation
 ```bash
-bun add -g @ravvdevv/ding-et
+bun add -g @ravvdevv/ding
 ```
 
 ## Usage Patterns
