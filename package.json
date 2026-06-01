@@ -1,0 +1,25 @@
+{
+  "name": "@ravvdevv/ding",
+  "version": "1.0.0",
+  "description": "Minimal CLI tool for Discord notifications and command wrapping.",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "ding": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.3.6"
+  }
+}
